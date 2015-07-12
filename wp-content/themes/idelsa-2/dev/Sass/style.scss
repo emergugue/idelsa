@@ -1,0 +1,51 @@
+@import "_mixins.scss";
+@import "_config.scss";
+@import "_grid.scss";
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+img{
+	max-width: 100%;
+}
+.no-visible-mobile{
+	display: none;
+}
+.main-content{
+	background-color: #ffffff;
+	height: 100vh;
+}
+
+/*--------------- $HEADER -------------*/
+.header{
+	background-color: $primary-color;
+}
+.ctn_logo{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	.logo{
+		text-align: center;
+		margin-right: 15px;
+	}
+}
+
+/*--------------- $MAIN CONTENT -------------*/
+.main-content{
+	padding: $ctn_padding;
+}
+
+/*--------------- $FOOTER -------------*/
+.ctn_footer{
+	color: $secondary-color;
+	text-align: center;
+	padding: 10px;
+	background: url(img/bg-footer-sm.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	a{
+		color: $secondary-color;
+		font-weight: 700;
+		cursor: pointer;
+	}
+}
+@import "_queries.scss";

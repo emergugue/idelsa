@@ -168,7 +168,7 @@ function is_nav_menu_item( $menu_item_id = 0 ) {
  * @return int|WP_Error Menu ID on success, WP_Error object on failure.
  */
 function wp_create_nav_menu( $menu_name ) {
-	return wp_update_nav_menu_object( 0, array( 'menu-name' => $menu_name ) );
+	return wp_update_nav_menu_object( 0, array( 'men-name' => $menu_name ) );
 }
 
 /**

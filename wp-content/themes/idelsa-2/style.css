@@ -1713,7 +1713,6 @@ img {
     -webkit-background-size: cover;
     background-size: cover; }
     .left-content header {
-      position: absolute;
       top: 35px;
       background: none; }
     .left-content footer {
@@ -1722,6 +1721,17 @@ img {
       margin: 0 auto;
       right: 0;
       left: 0; }
+
+  .ctn_menu {
+    background-color: #E10000;
+    width: 243px;
+    margin-left: -15px;
+    padding: 5px 0; }
+    .ctn_menu ul {
+      padding: 0;
+      margin: 0; }
+      .ctn_menu ul li {
+        list-style: none; }
 
   .ctn_main-content {
     background: #ffffff; }
@@ -1732,7 +1742,7 @@ img {
     background-size: cover;
     width: 276px;
     height: 163px;
-    margin-left: -19px; }
+    margin-left: -34px; }
 
   .logo {
     max-width: 100%;
@@ -1752,6 +1762,9 @@ img {
     background: url(img/bg-logo-lg.png) no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    margin-left: -15px; } }
+    margin-left: -30px; }
+
+  .ctn_menu {
+    width: 292px; } }
 
 /*# sourceMappingURL=style.css.map */

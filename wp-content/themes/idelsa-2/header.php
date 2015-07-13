@@ -24,22 +24,25 @@
 			<div class="left-content col-md-3">
 				<header class="header">
 					<div class="row">
-						<div class="ctn_logo col-xs-8 col-md-12">
-							<a href="<?php bloginfo("url"); ?> ">
-								<figure class="logo">
-									<picture>
-								      <source media="(min-width: 992px)" srcset="<?php bloginfo("template_directory"); ?>/img/logo-idelsa.png">
-								      <img src="<?php bloginfo("template_directory"); ?>/img/logo-idelsa-sm.png" alt="Logo de Idelsa">
-								    </picture>
-									<!-- <img src="img/logo-idelsa.png" alt="Logo de Idelsa"> -->
-								</figure>
-							</a>
-						</div><!-- /ctn_logo -->
-						<nav id="site-navigation" class="main-navigation ctn_menu col-xs-4 col-md-12" role="navigation">
+						<div class="col-xs-8 col-md-12">
+							<div class="ctn_logo">
+								<a href="<?php bloginfo("url"); ?> ">
+									<figure class="logo">
+										<picture>
+									      <source media="(min-width: 992px)" srcset="<?php bloginfo("template_directory"); ?>/img/logo-idelsa.png">
+									      <img src="<?php bloginfo("template_directory"); ?>/img/logo-idelsa-sm.png" alt="Logo de Idelsa">
+									    </picture>
+										<!-- <img src="img/logo-idelsa.png" alt="Logo de Idelsa"> -->
+									</figure>
+								</a>
+							</div><!-- /ctn_logo -->
+						</div>
+						<div class="col-xs-4 col-md-12">
+							<nav id="site-navigation" class="main-navigation ctn_nav " role="navigation">
 							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'idelsa' ); ?></button>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-						</nav><!-- #site-navigation -->
-						</nav><!-- /ctn_menu -->
+							</nav><!-- /ctn_menu -->
+						</div>
 					</div>
 				</header>
 				<footer class="no-visible-mobile">

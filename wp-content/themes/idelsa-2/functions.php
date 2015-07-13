@@ -42,7 +42,8 @@ function idelsa_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary Menu', 'idelsa' ),
+		'primary' => esc_html__( 'Menú principal', 'idelsa' ),
+		'secondary' => esc_html__( 'Menú secundario', 'idelsa' ),
 	) );
 
 	/*

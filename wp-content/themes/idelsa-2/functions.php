@@ -96,15 +96,23 @@ add_action( 'after_setup_theme', 'idelsa_content_width', 0 );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function idelsa_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'idelsa' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
+   /**
+	* Creates a sidebar
+	* @param string|array  Builds Sidebar based off of 'name' and 'id' values.
+	*/
+	$sb_footer = array(
+		'name'          => __( 'Información footer', 'theme_text_domain' ),
+		'id'            => 'info_footer',
+		'description'   => 'Cambie acá la información de su pie de página',
+		'class'         => 'texto_footer',
+		'before_widget' => '<p>',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>'
+	);
+
+	register_sidebar( $sb_footer );
+	
 }
 add_action( 'widgets_init', 'idelsa_widgets_init' );
 

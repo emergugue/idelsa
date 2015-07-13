@@ -8,19 +8,16 @@
  */
 
 ?>
-
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'idelsa' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'idelsa' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'idelsa' ), 'idelsa', '<a href="http://digitalcocktail.co" rel="designer">Digital Cocktail</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
+		</div><!-- /row -->
+		<footer class="visible-mobile">
+					<div class="ctn_footer">
+						<?php dynamic_sidebar("info_footer" ); ?>
+					</div>
+				</footer>
+	</div><!-- /page container -->
 <?php wp_footer(); ?>
-
 </body>
 </html>
+
+
+

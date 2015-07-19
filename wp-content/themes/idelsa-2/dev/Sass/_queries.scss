@@ -1,6 +1,6 @@
 @media (min-width:768px){
 	body{
-		background: url(img/bg.jpg) no-repeat center center;
+		background: url(img/bg.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
@@ -22,13 +22,14 @@
 	.left-content{
 		height: 100vh;
 		background: url(img/bg-left-content.jpg) repeat-y;
-		position: relative;
+		position: fixed;
 		-moz-box-shadow: 3px -1px 28px #474747;
 		-webkit-box-shadow: 3px -1px 28px #474747;
 		box-shadow: 3px -1px 28px #474747;
 		z-index: 1;
 		-webkit-background-size: cover;
 		background-size: cover;
+		max-width: 228px;
 		header{
 			// position: absolute;
 			top: 35px;
@@ -44,8 +45,8 @@
 	}
 	.ctn_menu {
 		background-color: $primary-color;
-		width: 243px;
-		margin-left: -15px;
+		width: 228px;
+		margin-left: 0px;
 		padding: 0px ;
 		ul{
 			padding: 0;
@@ -72,14 +73,15 @@
 	}
 	.ctn_main-content{
 		background: #ffffff;
+		min-height: 100vh;
 	}
 	.ctn_logo{
 		background: url(img/bg-logo.png) no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
-		width: 276px;
-		height: 163px;
-		margin-left: -34px;
+		width: 260px;
+		height: 155px;
+		margin-left: -19px;
 	}
 	.logo{
 		max-width: 100%;
@@ -97,14 +99,17 @@
 	}
 }
 @media (min-width:1200px){
+	.left-content{
+		max-width: 278px;
+	}
 	.ctn_logo{
-		width: 321px;
+		width: 305px;
 		background: url(img/bg-logo-lg.png) no-repeat;
 		-webkit-background-size: contain;
 		background-size: contain;
-		margin-left: -30px
+		margin-left: -15px
 	}
 	.ctn_menu{
-		width: 292px;
+		width: 278px;
 	}
 }

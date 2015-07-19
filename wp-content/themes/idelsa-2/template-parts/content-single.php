@@ -8,12 +8,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header" style="background: url(<?php the_field('imagen_portada'); ?>) no-repeat; background-size: cover;">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
+		<!-- <div class="entry-meta">
 			<?php idelsa_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</div>.entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

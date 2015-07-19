@@ -1659,8 +1659,7 @@ img {
   display: none; }
 
 .main-content {
-  background-color: #ffffff;
-  height: 100vh; }
+  background-color: #ffffff; }
 
 /*--------------- $HEADER -------------*/
 .header {
@@ -1704,6 +1703,22 @@ img {
 .entry-content {
   margin-top: 280px; }
 
+.vc_custom_heading h2 {
+  margin: 0px; }
+
+.btn_primary a {
+  background-color: #E10000 !important; }
+  .btn_primary a:hover {
+    background-color: #ae0000 !important; }
+
+.row-productos .vc_gitem-link {
+  color: #000000; }
+.row-productos h3 {
+  margin-top: 0px; }
+.row-productos .vc_grid-item-mini:hover .vc_gitem-link {
+  color: #E10000;
+  text-decoration: none; }
+
 /*--------------- $FOOTER -------------*/
 .ctn_footer {
   color: #925E1E;
@@ -1719,7 +1734,7 @@ img {
 
 @media (min-width: 768px) {
   body {
-    background: url(img/bg.jpg) no-repeat center center;
+    background: url(img/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     background-size: cover; }
 
@@ -1738,13 +1753,14 @@ img {
   .left-content {
     height: 100vh;
     background: url(img/bg-left-content.jpg) repeat-y;
-    position: relative;
+    position: fixed;
     -moz-box-shadow: 3px -1px 28px #474747;
     -webkit-box-shadow: 3px -1px 28px #474747;
     box-shadow: 3px -1px 28px #474747;
     z-index: 1;
     -webkit-background-size: cover;
-    background-size: cover; }
+    background-size: cover;
+    max-width: 228px; }
     .left-content header {
       top: 35px;
       background: none; }
@@ -1757,8 +1773,8 @@ img {
 
   .ctn_menu {
     background-color: #E10000;
-    width: 243px;
-    margin-left: -15px;
+    width: 228px;
+    margin-left: 0px;
     padding: 0px; }
     .ctn_menu ul {
       padding: 0;
@@ -1777,15 +1793,16 @@ img {
           background-color: #ae0000; }
 
   .ctn_main-content {
-    background: #ffffff; }
+    background: #ffffff;
+    min-height: 100vh; }
 
   .ctn_logo {
     background: url(img/bg-logo.png) no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    width: 276px;
-    height: 163px;
-    margin-left: -34px; }
+    width: 260px;
+    height: 155px;
+    margin-left: -19px; }
 
   .logo {
     max-width: 100%;
@@ -1800,14 +1817,17 @@ img {
       margin-right: -50%;
       transform: translate(-50%, -50%); } }
 @media (min-width: 1200px) {
+  .left-content {
+    max-width: 278px; }
+
   .ctn_logo {
-    width: 321px;
+    width: 305px;
     background: url(img/bg-logo-lg.png) no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    margin-left: -30px; }
+    margin-left: -15px; }
 
   .ctn_menu {
-    width: 292px; } }
+    width: 278px; } }
 
 /*# sourceMappingURL=style.css.map */

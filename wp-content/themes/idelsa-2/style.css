@@ -1673,9 +1673,36 @@ img {
     text-align: center;
     margin-right: 15px; }
 
+.menu-item i._mi {
+  width: 25px !important;
+  text-align: center; }
+
 /*--------------- $MAIN CONTENT -------------*/
 .main-content {
   padding: 1rem; }
+
+.entry-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+  height: 270px; }
+  .entry-header h1 {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 5px 35px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff; }
+
+.entry-title {
+  font-family: 'Cookie', cursive;
+  font-weight: 300;
+  font-size: 42px; }
+
+.entry-content {
+  margin-top: 280px; }
 
 /*--------------- $FOOTER -------------*/
 .ctn_footer {
@@ -1748,10 +1775,6 @@ img {
             background-color: #ae0000; }
         .ctn_menu ul li.current-menu-item a {
           background-color: #ae0000; }
-
-  .menu-item i._mi {
-    width: 25px !important;
-    text-align: center; }
 
   .ctn_main-content {
     background: #ffffff; }

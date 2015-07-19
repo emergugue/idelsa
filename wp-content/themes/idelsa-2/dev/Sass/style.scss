@@ -28,10 +28,36 @@ img{
 		margin-right: 15px;
 	}
 }
+.menu-item i._mi{
+	width: 25px !important;
+	text-align: center;
+}
 
 /*--------------- $MAIN CONTENT -------------*/
 .main-content{
 	padding: $ctn_padding;
+}
+.entry-header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: yellow;
+	height: 270px;
+	h1{
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		padding: 5px 35px;
+		background: rgba(0, 0, 0, 0.6);
+		color: #ffffff;
+	}
+}
+.entry-title{
+	@include primary-font(300, 42)
+}
+.entry-content{
+	margin-top: 280px;
 }
 
 /*--------------- $FOOTER -------------*/

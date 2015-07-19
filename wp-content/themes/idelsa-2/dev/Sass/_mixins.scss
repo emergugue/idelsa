@@ -1,0 +1,5 @@
+@mixin primary-font($lineHeight, $fs){
+	font-family: 'Cookie', cursive;
+	font-weight: $lineHeight;
+	font-size: $fs + px;
+}

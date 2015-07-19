@@ -15,6 +15,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+	<script src="<?php bloginfo('template_directory'); ?>/js/modernizr_idelsa.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
@@ -22,7 +23,7 @@
 <body>
 	<div class="page container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 full-header">
 				<div class="left-content">
 					<header class="header">
 						<div class="row">
@@ -34,7 +35,7 @@
 										      <source media="(min-width: 992px)" srcset="<?php bloginfo("template_directory"); ?>/img/logo-idelsa.png">
 										      <img src="<?php bloginfo("template_directory"); ?>/img/logo-idelsa-sm.png" alt="Logo de Idelsa">
 										    </picture>
-											<!-- <img src="img/logo-idelsa.png" alt="Logo de Idelsa"> -->
+											<!-- <img src="<?php bloginfo("template_directory"); ?>/img/logo-idelsa.png" alt="Logo de Idelsa"> -->
 										</figure>
 									</a>
 								</div><!-- /ctn_logo -->

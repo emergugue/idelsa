@@ -1,4 +1,6 @@
 <?php
+
+ require_once (dirname(__FILE__) . '/sample/barebones-config.php');
 /**
  * Idelsa functions and definitions
  *
